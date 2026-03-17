@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: "Jost", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+
+  --default-font-family: var(--font-serif);
+  --color-*: initial;
+  --color-transparent: transparent;
+
+  /* Neutrals */
+  --color-white: #ffffff;
+  --color-pure-black: #000000;
+
+  /* Primary */
+ --color-mahogany: #4C0A08;
+ --color-autumn: #B85209;
+ --color-chestnut: #C27D48;
+ --color-olive: #727C60;
+ --color-cinnamon: #B06F5F;
+ --color-desert: #D9BCA3;
+ --color-cream: #FAF6F1;
+ --color-walnut: #2C1F14;
+
+}
+
+.rise-in {
+  animation: rise-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
