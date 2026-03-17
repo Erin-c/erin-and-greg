@@ -12,10 +12,9 @@ const config = defineConfig({
     devtools(),
     tsconfigPaths({ projects: ['./tsconfig.json'] }),
     tailwindcss(),
-    tanstackStart(),
+    tanstackStart({ router: { basepath: '/' } }),
     viteReact(),
   ],
-  base: '/erin-and-greg/',
 })
 
 export default config
