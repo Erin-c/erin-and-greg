@@ -1,6 +1,6 @@
 # erin-and-greg
 
-wedding website
+wedding website!
 
 # Getting Started
 
