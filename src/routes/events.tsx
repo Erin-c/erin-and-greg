@@ -19,7 +19,8 @@ function RouteComponent() {
       icon: "💍",
       date: "February 27, 2027",
       time: "5:00 PM",
-      location: "Swallow's Eve",
+      location:
+        "Swallow's Eve\n 1411 Lower Crabapple Rd,\nFredericksburg, TX 78624",
       who: "Everyone is welcome!",
     },
     {
@@ -27,7 +28,8 @@ function RouteComponent() {
       icon: "🥂",
       date: "February 27, 2027",
       time: "7:00 PM",
-      location: "Swallow's Eve",
+      location:
+        "Swallow's Eve\n 1411 Lower Crabapple Rd,\nFredericksburg, TX 78624",
       who: "Everyone is welcome!",
     },
     {
@@ -39,11 +41,7 @@ function RouteComponent() {
       who: "Everyone is welcome!",
     },
   ];
-  {
-    /* <div className="hidden lg:flex absolute origin-center -translate-y-1/2 top-[60%] text-[250px] font-serif opacity-5 text-cream">
-        EVENTS
-      </div> */
-  }
+
   return (
     <main className="bg-olive bg-[url('../assets/flowers.png')]">
       <div className="flex flex-col gap-10 items-center p-20">
@@ -80,7 +78,7 @@ function RouteComponent() {
                   <p className="uppercase font-light font-sans text-sm mb-2 text-chestnut">
                     Location
                   </p>
-                  <p>{event.location}</p>
+                  <p className="whitespace-pre">{event.location}</p>
                 </div>
               </div>
             ))}

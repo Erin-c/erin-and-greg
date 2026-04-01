@@ -4,14 +4,12 @@ import Countdown from "react-countdown";
 export const Route = createFileRoute("/")({ component: App });
 
 function App() {
-  // Random component
   const Completionist = () => (
     <span className="font-serif text-chestnut font-extralight text-2xl">
       Til death do us part!
     </span>
   );
 
-  // Renderer callback with condition
   const renderer = ({
     days,
     hours,
