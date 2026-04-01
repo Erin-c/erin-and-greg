@@ -41,7 +41,7 @@ function RouteComponent() {
   return (
     <div className="flex flex-col page-wrap px-4 py-12 justify-center items-center gap-6 bg-cream">
       <section className="flex flex-col items-center rounded-2xl p-6 sm:p-8 w-full">
-        <span className="font-serif text-6xl text-walnut italic">
+        <span className="font-serif sm:text-6xl text-5xl text-walnut italic">
           Travel & Accommodations
         </span>
         <p className="mt-4 text-base text-walnut max-w-200">
@@ -62,7 +62,9 @@ function RouteComponent() {
       <section className="grid md:grid-cols-2 grid-cols-1 gap-4 w-full sm:px-20 px-10">
         {importantLocations.map((location) => (
           <div className="flex flex-col gap-2 items-center rounded-2xl p-6 w-full border border- text-autumn/50 justify-between">
-            <span className="text-2xl text-autumn">{location.name}</span>
+            <span className="text-2xl text-autumn text-center">
+              {location.name}
+            </span>
             <div className="text-chestnut font-serif italic break-keep max-w-80 text-center">
               {location.description}
             </div>
@@ -80,7 +82,7 @@ function RouteComponent() {
           </div>
         ))}
       </section>
-      <div className="w-full px-10">
+      <div className="w-full sm:px-10 px-0">
         <iframe
           src="https://www.google.com/maps/d/u/0/embed?mid=1LFA4O9vkEsnY_XbqOCM_zEPpLSqJO5g&ehbc=2E312F"
           className="w-full h-140 sm:h-160 rounded-xl border border-walnut"

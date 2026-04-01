@@ -44,7 +44,7 @@ function RouteComponent() {
 
   return (
     <main className="bg-olive bg-[url('../assets/flowers.png')]">
-      <div className="flex flex-col gap-10 items-center p-20">
+      <div className="flex flex-col gap-10 items-center md:px-20 px-10 py-12">
         <span className="font-serif text-6xl text-cream italic">
           Let the celebration begin!
         </span>
