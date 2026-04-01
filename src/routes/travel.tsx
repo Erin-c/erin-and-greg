@@ -40,7 +40,7 @@ export const Route = createFileRoute("/travel")({
 function RouteComponent() {
   return (
     <div className="flex flex-col page-wrap px-4 py-12 justify-center items-center gap-6 bg-cream">
-      <section className="flex flex-col items-center rounded-2xl p-6 sm:p-8">
+      <section className="flex flex-col items-center rounded-2xl p-6 sm:p-8 w-full">
         <span className="font-serif text-6xl text-walnut italic">
           Travel & Accommodations
         </span>
@@ -59,7 +59,7 @@ function RouteComponent() {
           shuttle schedule as we get closer to the date.
         </p>
       </section>
-      <section className="grid grid-cols-2 gap-4 w-full px-20">
+      <section className="grid md:grid-cols-2 grid-cols-1 gap-4 w-full sm:px-20 px-10">
         {importantLocations.map((location) => (
           <div className="flex flex-col gap-2 items-center rounded-2xl p-6 w-full border border- text-autumn/50 justify-between">
             <span className="text-2xl text-autumn">{location.name}</span>
@@ -80,11 +80,14 @@ function RouteComponent() {
           </div>
         ))}
       </section>
-      <iframe
-        src="https://www.google.com/maps/d/u/0/embed?mid=1LFA4O9vkEsnY_XbqOCM_zEPpLSqJO5g&ehbc=2E312F"
-        width="1280"
-        height="560"
-      ></iframe>
+      <div className="w-full px-10">
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=1LFA4O9vkEsnY_XbqOCM_zEPpLSqJO5g&ehbc=2E312F"
+          className="w-full h-140 sm:h-160 rounded-xl border border-walnut"
+          loading="lazy"
+          title="Wedding Map"
+        ></iframe>
+      </div>
     </div>
   );
 }
